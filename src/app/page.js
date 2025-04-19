@@ -59,28 +59,31 @@ export default function Home() {
         <RestOFPage>
           <FlexColumnContainer>
             <WelcomeContainer>
-              <p>Feliz aniversário!</p>
-              <p>
-                Bem-vinda ao teu site, que tem uma mensagem para ti. Mas para
-                ler a mensagem, vai ter que fazer os jogos para ganhar o código
-                de 4 dígitos
-              </p>
-              <p>Boa sorte e divirta-te!</p>
-              <Button onClick={CheckIfCodeCorrect}>Comfirmar Código</Button>
-              <br />
-              <Button onClick={JustShowMessage}>
-                Só mostra a mensagem, gringo!
-              </Button>
-              <br />
-              <CodeInput
-                maxLength={4}
-                type={"number"}
-                onChange={(event) => {
-                  setCode(event.target.value);
-                }}
-              ></CodeInput>
-              {showErrorMessage && <p>Sorry, wrong code!</p>}
+              <div>
+                <p>Feliz aniversário!</p>
+                <p>
+                  Bem-vinda ao teu site, que tem uma mensagem para ti. Mas para
+                  ler a mensagem, vai ter que fazer os jogos para ganhar o
+                  código de 4 dígitos
+                </p>
+                <p>Boa sorte e divirta-te!</p>
+                <Button onClick={CheckIfCodeCorrect}>Comfirmar Código</Button>
+                <br />
+                <Button onClick={JustShowMessage}>
+                  Só mostra a mensagem, gringo!
+                </Button>
+                <br />
+                <CodeInput
+                  maxLength={4}
+                  type={"number"}
+                  onChange={(event) => {
+                    setCode(event.target.value);
+                  }}
+                ></CodeInput>
+                {showErrorMessage && <p>Sorry, wrong code!</p>}
+              </div>
             </WelcomeContainer>
+
             {showMessage && (
               <MessageWrapper show={showMessage.toString()}>
                 <p>

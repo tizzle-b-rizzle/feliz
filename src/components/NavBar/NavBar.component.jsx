@@ -4,7 +4,6 @@ import Image from "next/image";
 import burger from "../../../public/assets/hamburger.svg";
 import cross from "../../../public/assets/cross.svg";
 export default function NavBar({ children }) {
-  let devicewidth = window.innerWidth;
   const [showNav, setShowNav] = useState("false");
 
   return (

@@ -12,7 +12,6 @@ import { setIsLoseGame, setIsStartOfGame } from "@/redux/minesweeperSlice";
 import dog from "../../../public/assets/dog.png";
 
 export default function Page() {
-  let devicewidth = window.innerWidth;
   const dispatch = useDispatch();
   const handleStartClick = () => {
     dispatch(setIsLoseGame(false));

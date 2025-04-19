@@ -81,49 +81,50 @@ export default function Home() {
               ></CodeInput>
               {showErrorMessage && <p>Sorry, wrong code!</p>}
             </WelcomeContainer>
-
-            <MessageWrapper show={showMessage.toString()}>
-              <p>
-                FELIZ ANIVERSÁRIO!!!
-                <br />
-                <br />
-                Tu tem 29 anos agora. 29 para trás é 92, e 9 menos 2 é 7, que é
-                um número da sorte, e espero que tu tenha apenas sorte, saúde, e
-                felicidade para hoje, e para o resto da tua vida! E hoje é
-                páscoa, então vou orar ainda mais para ti: que Deus continue
-                dando saúde a todos vocês e mantendo todos vocês seguros. Também
-                espero que tu ganhe bastante chocolate de páscoa, cerca de 20kg.
-                15kg se tu quer ser saudável
-                <br />
-                <br />
-                Tu merece descansar depois de todas as coisas que tu faz dia a
-                dia (incluindo resolvendo todos aqueles mistérios!). Talvez tu
-                pode comprar um vestido? Um muito lindo e azul? Fique a vontade
-                usar isso como um jeito de perder qualquer culpa que tu (por
-                motivo algum) pode ter de comprar o vestido acima mencionado,
-                que talvez não existe, quem sabe?
-                <br />
-                <br />
-                Espero que você goste dos jogos aqui: eu me diverti tanto
-                jogando os jogod de LinkedIn contigo nas ligações. Isso me dá
-                saudades de quando a gente jogou Minesweeper e Sudoku juntos aí,
-                e é por isso que também escolhi eles. Espero que podemos jogar
-                eles juntos novamente em breve na vida realL agora que tenho meu
-                próprio lugar, será mais fácil planejar isso.
-                <br />
-                <br />
-                Mas por enquanto, o abraço terá que ser virtual
-                <br />
-                <br />
-                Tenha um dia fantástico, Lin!
-                <br />
-                <br />
-                Com amor,
-                <br />
-                <br />
-                Ty
-              </p>
-            </MessageWrapper>
+            {showMessage && (
+              <MessageWrapper show={showMessage.toString()}>
+                <p>
+                  FELIZ ANIVERSÁRIO!!!
+                  <br />
+                  <br />
+                  Tu tem 29 anos agora. 29 para trás é 92, e 9 menos 2 é 7, que
+                  é um número da sorte, e espero que tu tenha apenas sorte,
+                  saúde, e felicidade para hoje, e para o resto da tua vida! E
+                  hoje é páscoa, então vou orar ainda mais para ti: que Deus
+                  continue dando saúde a todos vocês e mantendo todos vocês
+                  seguros. Também espero que tu ganhe bastante chocolate de
+                  páscoa, cerca de 20kg. 15kg se tu quer ser saudável
+                  <br />
+                  <br />
+                  Tu merece descansar depois de todas as coisas que tu faz dia a
+                  dia (incluindo resolvendo todos aqueles mistérios!). Talvez tu
+                  pode comprar um vestido? Um muito lindo e azul? Fique a
+                  vontade usar isso como um jeito de perder qualquer culpa que
+                  tu (por motivo algum) pode ter de comprar o vestido acima
+                  mencionado, que talvez não existe, quem sabe?
+                  <br />
+                  <br />
+                  Espero que você goste dos jogos aqui: eu me diverti tanto
+                  jogando os jogod de LinkedIn contigo nas ligações. Isso me dá
+                  saudades de quando a gente jogou Minesweeper e Sudoku juntos
+                  aí, e é por isso que também escolhi eles. Espero que podemos
+                  jogar eles juntos novamente em breve na vida realL agora que
+                  tenho meu próprio lugar, será mais fácil planejar isso.
+                  <br />
+                  <br />
+                  Mas por enquanto, o abraço terá que ser virtual
+                  <br />
+                  <br />
+                  Tenha um dia fantástico, Lin!
+                  <br />
+                  <br />
+                  Com amor,
+                  <br />
+                  <br />
+                  Ty
+                </p>
+              </MessageWrapper>
+            )}
           </FlexColumnContainer>
         </RestOFPage>
       </EntirePageContainer>
